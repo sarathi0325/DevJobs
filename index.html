@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="index.css">
+  <title>Job Portal Landing Page</title>
+</head>
+<body>
+    <div class="bg-white flex flex-col justify-center items-center w-full">
+        <header class="w-full">
+            <nav class="w-full bg-blue-600 flex justify-between px-5 py-5">
+                <h1 class="text-base md:text-2xl text-white">DevJobs</h1>
+                <div class="flex items-center justify-between gap-4">
+                    <div class="flex gap-4 text-white">
+                       <p class="text-xs md:text-xl">Post a Job</p>
+                       <p class="text-xs md:text-xl">Login</p>
+                    </div>
+                    <div class="bg-white md:w-48 w-32 h-6 md:h-8 flex items-center justify-center px-2 py-2">
+                        <input class="w-[100%] text-black md:text-base text-xs bg-transparent" type="search" placeholder="Search jobs..." />
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section class="w-full bg-gray-300 py-8 px-10 text-center">
+            <h2 class="text-2xl md:text-4xl text-bold text-gray-800 mb-6">Find Your Dream Job</h2>
+            <p class="text-sm md:tex-lg text-gray-700 mb-6">Browse Thousands of Companies from all over the world</p>
+            <button class="bg-blue-500 hover:bg-blue-800 text-white px-6 py-2 rounded-md">Browse Jobs</button>
+        </section>
+        <main class="w-full flex flex-col md:flex-row p-4 md:p-0 md:h-[70vh]">
+            <aside class="p-4 md:py-6 bg-gray-300 w-[100%] md:shrink-0 md:w-[18%] shadow-md flex flex-col justify-start">
+                <h1 class="text-lg mb-4 font-semibold">Filters</h1>
+                <div class="flex flex-col text-sm gap-3 mb-4">
+                    <h2 class="text-sm font-medium">Role</h2>
+                    <label class="flex items-center gap-2">
+                        <input type="checkbox" class="accent-blue-600"/>Frontend
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="checkbox" class="accent-blue-600"/>Backend
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="checkbox" class="accent-blue-600"/>FullStack
+                    </label>
+                </div>
+                <div class="mb-4 flex flex-col gap-2">
+                    <h2 class="text-sm font-medium">Teck Stack</h2>
+                    <div class="flex flex-wrap gap-2 text-xs text-white">
+                        <span class="px-2 py-1 bg-gray-500 rounded hover:bg-blue-500 cursor-pointer">HTML</span>
+                        <span class="px-2 py-1 bg-gray-500 rounded hover:bg-blue-500 cursor-pointer">CSS</span>
+                        <span class="px-2 py-1 bg-gray-500 rounded hover:bg-blue-500 cursor-pointer">JAVASCRPT</span>
+                        <span class="px-2 py-1 bg-gray-500 rounded hover:bg-blue-500 cursor-pointer">REACT.JS</span>
+                        <span class="px-2 py-1 bg-gray-500 rounded hover:bg-blue-500 cursor-pointer">NODE.JS</span>
+                        <span class="px-2 py-1 bg-gray-500 rounded hover:bg-blue-500 cursor-pointer">SQL</span>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <h2 class="text-sm font-medium">Location</h2>
+                    <input type="text" placeholder="City/Remote" class="w-full px-2 py-1 border rounded text-sm focus:outline-blue-600"/>
+                </div>
+                <div class="mb-4">
+                    <h2 class="text-sm font-medium">Experience</h2>
+                    <div class="flex flex-col gap-2 text-sm">
+                        <label class="flex items-center gap-2">
+                            <input type="radio" name="exp" class="accent-blue-600"/>Junior
+                        </label>
+                        <label class="flex items-center gap-2">
+                            <input type="radio" name="exp" class="accent-blue-600"/>Mid
+                        </label>
+                        <label class="flex items-center gap-2">
+                            <input type="radio" name="exp" class="accent-blue-600"/>Senior
+                        </label>
+                    </div>
+                </div>
+                <button class="block w-[50%] mx-auto bg-blue-600 hover:bg-blue-800 text-white rounded-md py-2 transistion">
+                    Apply
+                </button>
+            </aside>
+            <div class="card-section w-full md:flex-1 bg-gray-50 p-4 md:p-6 flex flex-wrap justify-center items-start md:sticky md:top-0  gap-4 shadow-md md:shadow-lg md:overflow-y-auto">
+                <div class="each-card w-full md:w-[calc(25%-1rem)] flex flex-col rounded-lg">
+                    <img class="w-full rounded md:h-28 object-cover  rounded-t-lg" src="https://i.postimg.cc/mZJdFmtq/Full-Stack-Dev-Job-Banner.png"/>
+                    <div class="py-2 flex flex-col justify-between flex-1 gap-2 bg-white shadow-lg rounded-b-lg">
+                        <div class="px-1">
+                            <h3 class="text-sm font-bold text-gray-800">Fullstack Developer</h3>
+                            <p class="text-xs text-gray-500">Company: Webify</p>
+                            <p class="text-xs text-gray-500">Location: Remote</p>
+                            <p class="text-xs text-gray-500">Experience: 3-5 years</p>
+                            <div class="flex flex-wrap gap-1 mt-1">
+                                <span class="text-xs bg-purple-100 text-purple-700 px-2 py-1 rounded-full">REACT</span>
+                                <span class="text-xs bg-purple-100 text-purple-700 px-2 py-1 rounded-full">NODEJS</span>
+                                <span class="text-xs bg-purple-100 text-purple-700 px-2 py-1 rounded-full">MONGODB</span>
+                            </div>
+                        </div>
+                        <button class="w-full flex justify-between items-center py-2 px-2 rounded-lg hover:bg-blue-500 hover:text-white">
+                            Start <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </button>
+                    </div>
+                </div>
+
+                
+                <div class="each-card w-full md:w-[calc(25%-1rem)] flex flex-col rounded-lg">
+                    <img class="w-full rounded md:h-28 object-cover rounded-t-lg" src="https://d8it4huxumps7.cloudfront.net/uploads/images/67e2a31515096_front_end.jpg?d=340x195"/>
+                    <div class="py-2 flex flex-col justify-between flex-1 gap-2 bg-white shadow-lg rounded-b-lg">
+                        <div class="px-1">
+                            <h3 class="text-sm font-bold text-gray-800">Frontend Developer</h3>
+                            <p class="text-xs text-gray-500">Company: DevLabs</p>
+                            <p class="text-xs text-gray-500">Location: Remote</p>
+                            <p class="text-xs text-gray-500">Experience: 1-3 years</p>
+                            <div class="flex flex-wrap gap-1 mt-1">
+                                <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">REACT</span>
+                                <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">TAILWIND</span>
+                                <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">ANGULAR</span>
+                            </div>
+                        </div>
+                        <button class="w-full flex justify-between items-center py-2 px-2 rounded-lg hover:bg-blue-500 hover:text-white">
+                            Start
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="each-card w-full md:w-[calc(25%-1rem)] flex flex-col rounded-lg">
+                    <img class="w-full rounded md:h-28 object-cover rounded-t-lg" src="https://d8it4huxumps7.cloudfront.net/uploads/images/67bc848d98e04_backend_developer.png?d=340x195"/>
+                    <div class="py-2 flex flex-col justify-between flex-1 gap-2 bg-white shadow-lg rounded-b-lg">
+                        <div class="px-1">
+                            <h3 class="text-sm font-bold text-gray-800">Backend Developer</h3>
+                            <p class="text-xs text-gray-500">Company: CodeWorks</p>
+                            <p class="text-xs text-gray-500">Location: Bangalore</p>
+                            <p class="text-xs text-gray-500">Experience: 2-4 years</p>
+                            <div class="flex flex-wrap gap-1 mt-1">
+                                <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full">NODEJS</span>
+                                <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full">EXPRESS</span>
+                            </div>
+                        </div>
+                        <button class="w-full flex justify-between items-center py-2 px-2 rounded-lg hover:bg-blue-500 hover:text-white">
+                            Start <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </button>
+                      </div>
+                 </div>
+
+
+                <div class="each-card w-full md:w-[calc(25%-1rem)] flex flex-col rounded-lg">
+                    <img class="w-full rounded md:h-28 object-cover rounded-t-lg" src="https://d8it4huxumps7.cloudfront.net/uploads/images/67bd92a91362d_ux_designer.jpg?d=340x195"/>
+                    <div class="py-2 flex flex-col justify-between flex-1 gap-2 bg-white shadow-lg rounded-b-lg">
+                        <div class="px-1">
+                            <h3 class="text-sm font-bold text-gray-800">UI/UX Designer</h3>
+                            <p class="text-xs text-gray-500">Company: PixelCraft</p>
+                            <p class="text-xs text-gray-500">Location: Chennai</p>
+                            <p class="text-xs text-gray-500">Experience: 1-2 years</p>
+                            <div class="flex flex-wrap gap-1 mt-1">
+                                <span class="text-xs bg-pink-100 text-pink-700 px-2 py-1 rounded-full">FIGMA</span>
+                                <span class="text-xs bg-pink-100 text-pink-700 px-2 py-1 rounded-full">ADOBE XD</span>
+                            </div>
+                        </div>
+                        <button class="w-full flex justify-between items-center py-2 px-2 rounded-lg hover:bg-blue-500 hover:text-white">
+                            Start <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="each-card w-full md:w-[calc(25%-1rem)] flex flex-col rounded-lg">
+                    <img class="w-full rounded md:h-28 object-cover rounded-t-lg" src="https://d8it4huxumps7.cloudfront.net/uploads/images/67bc848d98e04_backend_developer.png?d=340x195"/>
+                    <div class="py-2 flex flex-col justify-between flex-1 gap-2 bg-white shadow-lg rounded-b-lg">
+                        <div class="px-1">
+                            <h3 class="text-sm font-bold text-gray-800">Backend Developer</h3>
+                            <p class="text-xs text-gray-500">Company: CloudServe</p>
+                            <p class="text-xs text-gray-500">Location: Remote</p>
+                            <p class="text-xs text-gray-500">Experience: 4-6 years</p>
+                            <div class="flex flex-wrap gap-1 mt-1">
+                                <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full">JAVA</span>
+                                <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full">SPRING</span>
+                            </div>
+                        </div>
+                        <button class="w-full flex justify-between items-center py-2 px-2 rounded-lg hover:bg-blue-500 hover:text-white">
+                            Start <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="each-card w-full md:w-[calc(25%-1rem)] flex flex-col rounded-lg">
+                    <img class="w-full rounded md:h-28 object-cover rounded-t-lg" src="https://d8it4huxumps7.cloudfront.net/uploads/images/67e2a31515096_front_end.jpg?d=340x195"/>
+                    <div class="py-2 flex flex-col justify-between flex-1 gap-2 bg-white shadow-lg rounded-b-lg">
+                        <div class="px-1">
+                            <h3 class="text-sm font-bold text-gray-800">Frontend Developer</h3>
+                            <p class="text-xs text-gray-500">Company: DevLabs</p>
+                            <p class="text-xs text-gray-500">Location: Remote</p>
+                            <p class="text-xs text-gray-500">Experience: 1-3 years</p>
+                            <div class="flex flex-wrap gap-1 mt-1">
+                                <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">REACT</span>
+                                <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">TAILWIND</span>
+                            </div>
+                        </div>
+                        <button class="w-full flex justify-between items-center py-2 px-2 rounded-lg hover:bg-blue-500 hover:text-white">
+                            Start <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="each-card w-full md:w-[calc(25%-1rem)] flex flex-col rounded-lg">
+                    <img class="w-full rounded md:h-28 object-cover rounded-t-lg" src="https://d8it4huxumps7.cloudfront.net/uploads/images/67bc848d98e04_backend_developer.png?d=340x195"/>
+                    <div class="py-2 flex flex-col justify-between flex-1 gap-2 bg-white shadow-lg rounded-b-lg">
+                        <div class="px-1">
+                            <h3 class="text-sm font-bold text-gray-800">Backend Developer</h3>
+                            <p class="text-xs text-gray-500">Company: CodeWorks</p>
+                            <p class="text-xs text-gray-500">Location: Bangalore</p>
+                            <p class="text-xs text-gray-500">Experience: 2-4 years</p>
+                            <div class="flex flex-wrap gap-1 mt-1">
+                                <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full">NODEJS</span>
+                                <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full">EXPRESS</span>
+                            </div>
+                        </div>
+                        <button class="w-full flex justify-between items-center py-2 px-2 rounded-lg hover:bg-blue-500 hover:text-white">
+                            Start <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="each-card w-full md:w-[calc(25%-1rem)] flex flex-col rounded-lg">
+                    <img class="w-full rounded md:h-28 object-cover rounded-t-lg" src="https://d8it4huxumps7.cloudfront.net/uploads/images/67bd92f86c5f2_cyber_security_engineer.jpg?d=340x195"/>
+                    <div class="py-2 flex flex-col justify-between flex-1 gap-2 bg-white shadow-lg rounded-b-lg">
+                        <div class="px-1">
+                            <h3 class="text-sm font-bold text-gray-800">Cyber Security Engineer</h3>
+                            <p class="text-xs text-gray-500">Company: Cybify</p>
+                            <p class="text-xs text-gray-500">Location: Remote</p>
+                            <p class="text-xs text-gray-500">Experience: 3-5 years</p>
+                            <div class="flex flex-wrap gap-1 mt-1">
+                                <span class="text-xs bg-purple-100 text-purple-700 px-2 py-1 rounded-full">REACT</span>
+                                <span class="text-xs bg-purple-100 text-purple-700 px-2 py-1 rounded-full">NODEJS</span>
+                                <span class="text-xs bg-purple-100 text-purple-700 px-2 py-1 rounded-full">MONGODB</span>
+                            </div>
+                        </div>
+                        <button class="w-full flex justify-between items-center py-2 px-2 rounded-lg hover:bg-blue-500 hover:text-white">
+                            Start <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </button>
+                    </div>
+                </div>
+
+                
+                <div class="each-card w-full md:w-[calc(25%-1rem)] flex flex-col rounded-lg">
+                    <img class="w-full rounded md:h-28 object-cover rounded-t-lg" src="https://d8it4huxumps7.cloudfront.net/uploads/images/67bd92a91362d_ux_designer.jpg?d=340x195"/>
+                    <div class="py-2 flex flex-col justify-between flex-1 gap-2 bg-white shadow-lg rounded-b-lg">
+                        <div class="px-1">
+                            <h3 class="text-sm font-bold text-gray-800">UI/UX Designer</h3>
+                            <p class="text-xs text-gray-500">Company: PixelCraft</p>
+                            <p class="text-xs text-gray-500">Location: Chennai</p>
+                            <p class="text-xs text-gray-500">Experience: 1-2 years</p>
+                            <div class="flex flex-wrap gap-1 mt-1">
+                                <span class="text-xs bg-pink-100 text-pink-700 px-2 py-1 rounded-full">FIGMA</span>
+                                <span class="text-xs bg-pink-100 text-pink-700 px-2 py-1 rounded-full">ADOBE XD</span>
+                            </div>
+                        </div>
+                        <button class="w-full flex justify-between items-center py-2 px-2 rounded-lg hover:bg-blue-500 hover:text-white">
+                            Start <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="each-card w-full md:w-[calc(25%-1rem)] flex flex-col rounded-lg">
+                    <img class="w-full rounded md:h-28 object-cover rounded-t-lg" src="https://d8it4huxumps7.cloudfront.net/uploads/images/67bc848d98e04_backend_developer.png?d=340x195"/>
+                    <div class="py-2 flex flex-col justify-between flex-1 gap-2 bg-white shadow-lg rounded-b-lg">
+                        <div class="px-1">
+                            <h3 class="text-sm font-bold text-gray-800">Backend Developer</h3>
+                            <p class="text-xs text-gray-500">Company: CloudServe</p>
+                            <p class="text-xs text-gray-500">Location: Remote</p>
+                            <p class="text-xs text-gray-500">Experience: 4-6 years</p>
+                            <div class="flex flex-wrap gap-1 mt-1">
+                                <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full">JAVA</span>
+                                <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full">SPRING</span>
+                            </div>
+                        </div>
+                        <button class="w-full flex justify-between items-center py-2 px-2 rounded-lg hover:bg-blue-500 hover:text-white">
+                            Start <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </button>
+                    </div>
+                </div>
+
+  
+                <div class="each-card w-full md:w-[calc(25%-1rem)] flex flex-col rounded-lg">
+                    <img class="w-full rounded md:h-28 object-cover rounded-t-lg" src="https://d8it4huxumps7.cloudfront.net/uploads/images/67bd93321ee18_app_developer.jpg?d=340x195"/>
+                    <div class="py-2 flex flex-col justify-between flex-1 gap-2 bg-white shadow-lg rounded-b-lg">
+                        <div class="px-1">
+                            <h3 class="text-sm font-bold text-gray-800">Mobile App Developer</h3>
+                            <p class="text-xs text-gray-500">Company: AppHive</p>
+                            <p class="text-xs text-gray-500">Location: Mumbai</p>
+                            <p class="text-xs text-gray-500">Experience: 2-3 years</p>
+                            <div class="flex flex-wrap gap-1 mt-1">
+                                <span class="text-xs bg-yellow-100 text-yellow-700 px-2 py-1 rounded-full">FLUTTER</span>
+                                <span class="text-xs bg-yellow-100 text-yellow-700 px-2 py-1 rounded-full">DART</span>
+                            </div>
+                        </div>
+                        <button class="w-full flex justify-between items-center py-2 px-2 rounded-lg hover:bg-blue-500 hover:text-white">
+                            Start <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="each-card w-full md:w-[calc(25%-1rem)] flex flex-col rounded-lg">
+                    <img class="w-full rounded md:h-28 object-cover rounded-t-lg" src="https://d8it4huxumps7.cloudfront.net/uploads/images/67bc84d016d58_devops_engineer.png?d=340x195"/>
+                    <div class="py-2 flex flex-col justify-between flex-1 gap-2 bg-white shadow-lg rounded-b-lg">
+                        <div class="px-1">
+                            <h3 class="text-sm font-bold text-gray-800">DevOps Engineer</h3>
+                            <p class="text-xs text-gray-500">Company: CloudOps</p>
+                            <p class="text-xs text-gray-500">Location: Hyderabad</p>
+                            <p class="text-xs text-gray-500">Experience: 3-5 years</p>
+                            <div class="flex flex-wrap gap-1 mt-1">
+                                <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded-full">AWS</span>
+                                <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded-full">DOCKER</span>
+                                <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded-full">KUBERNETES</span>
+                            </div>
+                        </div>
+                        <button class="w-full flex justify-between items-center py-2 px-2 rounded-lg hover:bg-blue-500 hover:text-white">
+                            Start <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="each-card w-full md:w-[calc(25%-1rem)] flex flex-col rounded-lg">
+                    <img class="w-full rounded md:h-28 object-cover rounded-t-lg" src="https://d8it4huxumps7.cloudfront.net/uploads/images/67bd918dbb515_qa_engineer.jpg?d=340x195"/>
+                    <div class="py-2 flex flex-col justify-between flex-1 gap-2 bg-white shadow-lg rounded-b-lg">
+                        <div class="px-1">
+                            <h3 class="text-sm font-bold text-gray-800">QA Engineer</h3>
+                            <p class="text-xs text-gray-500">Company: Testify</p>
+                            <p class="text-xs text-gray-500">Location: Pune</p>
+                            <p class="text-xs text-gray-500">Experience: 1-3 years</p>
+                            <div class="flex flex-wrap gap-1 mt-1">
+                                <span class="text-xs bg-red-100 text-red-700 px-2 py-1 rounded-full">SELENIUM</span>
+                                <span class="text-xs bg-red-100 text-red-700 px-2 py-1 rounded-full">CYPRESS</span>
+                            </div>
+                        </div>
+                        <button class="w-full flex justify-between items-center py-2 px-2 rounded-lg hover:bg-blue-500 hover:text-white">
+                            Start <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </button>
+                    </div>
+                </div>
+
+                 <div class="each-card w-full md:w-[calc(25%-1rem)] flex flex-col rounded-lg">
+                    <img class="w-full rounded md:h-28 object-cover rounded-t-lg" src="https://i.postimg.cc/mZJdFmtq/Full-Stack-Dev-Job-Banner.png"/>
+                    <div class="py-2 flex flex-col justify-between flex-1 gap-2 bg-white shadow-lg rounded-b-lg">
+                        <div class="px-1">
+                            <h3 class="text-sm font-bold text-gray-800">Full Stack Developer</h3>
+                            <p class="text-xs text-gray-500">Company: DocuTech</p>
+                            <p class="text-xs text-gray-500">Location: Pune</p>
+                            <p class="text-xs text-gray-500">Experience: 1-2 years</p>
+                            <div class="flex flex-wrap gap-1 mt-1">
+                                <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">MARKDOWN</span>
+                                <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">DOCS</span>
+                            </div>
+                        </div>
+                        <button class="w-full flex justify-between items-center py-2 px-2 rounded-lg hover:bg-blue-500 hover:text-white">
+                            Start <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </button>
+                    </div>
+                </div>        
+
+
+                <div class="each-card w-full md:w-[calc(25%-1rem)] flex flex-col rounded-lg">
+                    <img class="w-full rounded md:h-28 object-cover rounded-t-lg" src="https://d8it4huxumps7.cloudfront.net/uploads/images/67bc84b2d2d25_data_analyst.png?d=340x195"/>
+                    <div class="py-2 flex flex-col justify-between flex-1 gap-2 bg-white shadow-lg rounded-b-lg">
+                        <div class="px-1">
+                            <h3 class="text-sm font-bold text-gray-800">Data Analyst</h3>
+                            <p class="text-xs text-gray-500">Company: DataWise</p>
+                            <p class="text-xs text-gray-500">Location: Remote</p>
+                            <p class="text-xs text-gray-500">Experience: 2-4 years</p>
+                            <div class="flex flex-wrap gap-1 mt-1">
+                                <span class="text-xs bg-teal-100 text-teal-700 px-2 py-1 rounded-full">PYTHON</span>
+                                <span class="text-xs bg-teal-100 text-teal-700 px-2 py-1 rounded-full">SQL</span>
+                                <span class="text-xs bg-teal-100 text-teal-700 px-2 py-1 rounded-full">EXCEL</span>
+                            </div>
+                        </div>
+                        <button class="w-full flex justify-between items-center py-2 px-2 rounded-lg hover:bg-blue-500 hover:text-white">
+                            Start <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="each-card w-full md:w-[calc(25%-1rem)] flex flex-col rounded-lg">
+                    <img class="w-full rounded md:h-28 object-cover rounded-t-lg" src="https://d8it4huxumps7.cloudfront.net/uploads/images/67bd92bf9f943_database_administrator.jpg?d=340x195"/>
+                    <div class="py-2 flex flex-col justify-between flex-1 gap-2 bg-white shadow-lg rounded-b-lg">
+                        <div class="px-1">
+                            <h3 class="text-sm font-bold text-gray-800">Database Administrator</h3>
+                            <p class="text-xs text-gray-500">Company: NetSecure</p>
+                            <p class="text-xs text-gray-500">Location: Delhi</p>
+                            <p class="text-xs text-gray-500">Experience: 3-5 years</p>
+                            <div class="flex flex-wrap gap-1 mt-1">
+                                <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded-full">LINUX</span>
+                                <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded-full">WINDOWS</span>
+                                <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded-full">AWS</span>
+                            </div>
+                        </div>
+                        <button class="w-full flex justify-between items-center py-2 px-2 rounded-lg hover:bg-blue-500 hover:text-white">
+                            Start <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="each-card w-full md:w-[calc(25%-1rem)] flex flex-col rounded-lg">
+                    <img class="w-full rounded md:h-28 object-cover rounded-t-lg" src="https://d8it4huxumps7.cloudfront.net/uploads/images/67bd91f7227de_machine_learning_engineer.jpg?d=340x195"/>
+                    <div class="py-2 flex flex-col justify-between flex-1 gap-2 bg-white shadow-lg rounded-b-lg">
+                        <div class="px-1">
+                            <h3 class="text-sm font-bold text-gray-800">Machine Learning Engineer</h3>
+                            <p class="text-xs text-gray-500">Company: Innovex</p>
+                            <p class="text-xs text-gray-500">Location: Remote</p>
+                            <p class="text-xs text-gray-500">Experience: 4-6 years</p>
+                            <div class="flex flex-wrap gap-1 mt-1">
+                                <span class="text-xs bg-indigo-100 text-indigo-700 px-2 py-1 rounded-full">AGILE</span>
+                                <span class="text-xs bg-indigo-100 text-indigo-700 px-2 py-1 rounded-full">SCRUM</span>
+                            </div>
+                        </div>
+                        <button class="w-full flex justify-between items-center py-2 px-2 rounded-lg hover:bg-blue-500 hover:text-white">
+                            Start <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="each-card w-full md:w-[calc(25%-1rem)] flex flex-col rounded-lg">
+                    <img class="w-full rounded md:h-28 object-cover rounded-t-lg" src="https://d8it4huxumps7.cloudfront.net/uploads/images/67bd930495b12_ai_engineer.jpg?d=340x195"/>
+                    <div class="py-2 flex flex-col justify-between flex-1 gap-2 bg-white shadow-lg rounded-b-lg">
+                        <div class="px-1">
+                            <h3 class="text-sm font-bold text-gray-800">AI Engineer</h3>
+                            <p class="text-xs text-gray-500">Company: NeuralTech</p>
+                            <p class="text-xs text-gray-500">Location: Remote</p>
+                            <p class="text-xs text-gray-500">Experience: 2-4 years</p>
+                            <div class="flex flex-wrap gap-1 mt-1">
+                                <span class="text-xs bg-yellow-100 text-yellow-700 px-2 py-1 rounded-full">PYTHON</span>
+                                <span class="text-xs bg-yellow-100 text-yellow-700 px-2 py-1 rounded-full">TENSORFLOW</span>
+                                <span class="text-xs bg-yellow-100 text-yellow-700 px-2 py-1 rounded-full">PYTORCH</span>
+                            </div>
+                        </div>
+                        <button class="w-full flex justify-between items-center py-2 px-2 rounded-lg hover:bg-blue-500 hover:text-white">
+                            Start <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="each-card w-full md:w-[calc(25%-1rem)] flex flex-col rounded-lg">
+                    <img class="w-full rounded md:h-28 object-cover rounded-t-lg" src="https://d8it4huxumps7.cloudfront.net/uploads/images/67bc849cbb40a_cloud_developer.png?d=340x195"/>
+                    <div class="py-2 flex flex-col justify-between flex-1 gap-2 bg-white shadow-lg rounded-b-lg">
+                        <div class="px-1">
+                            <h3 class="text-sm font-bold text-gray-800">Cloud Developer</h3>
+                            <p class="text-xs text-gray-500">Company: SkyHigh</p>
+                            <p class="text-xs text-gray-500">Location: Bangalore</p>
+                            <p class="text-xs text-gray-500">Experience: 5-7 years</p>
+                            <div class="flex flex-wrap gap-1 mt-1">
+                                <span class="text-xs bg-purple-100 text-purple-700 px-2 py-1 rounded-full">AWS</span>
+                                <span class="text-xs bg-purple-100 text-purple-700 px-2 py-1 rounded-full">AZURE</span>
+                                <span class="text-xs bg-purple-100 text-purple-700 px-2 py-1 rounded-full">GCP</span>
+                            </div>
+                        </div>
+                        <button class="w-full flex justify-between items-center py-2 px-2 rounded-lg hover:bg-blue-500 hover:text-white">
+                            Start <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="each-card w-full md:w-[calc(25%-1rem)] flex flex-col rounded-lg">
+                    <img class="w-full rounded md:h-28 object-cover rounded-t-lg" src="https://d8it4huxumps7.cloudfront.net/uploads/images/67bc84a7c5bd2_blockchain_engineer.png?d=340x195"/>
+                    <div class="py-2 flex flex-col justify-between flex-1 gap-2 bg-white shadow-lg rounded-b-lg">
+                        <div class="px-1">
+                            <h3 class="text-sm font-bold text-gray-800">Blockchain Engineer</h3>
+                            <p class="text-xs text-gray-500">Company: ChainWorks</p>
+                            <p class="text-xs text-gray-500">Location: Remote</p>
+                            <p class="text-xs text-gray-500">Experience: 3-5 years</p>
+                            <div class="flex flex-wrap gap-1 mt-1">
+                                <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full">SOLIDITY</span>
+                                <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full">ETHEREUM</span>
+                                <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full">WEB3</span>
+                            </div>
+                        </div>
+                        <button class="w-full flex justify-between items-center py-2 px-2 rounded-lg hover:bg-blue-500 hover:text-white">
+                            Start <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </button>
+                    </div>
+                </div>
+             </div>
+        </main>
+
+
+        <footer class="bg-gray-900 text-white py-6 w-full">
+            <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+
+                <div class="text-sm md:w-1/3">
+                <h3 class="font-bold mb-1">About Us</h3>
+                <p class="text-gray-400">Connecting developers with top tech jobs. Stay updated with latest opportunities.</p>
+                </div>
+
+            <div class="flex flex-col md:flex-row gap-6 text-sm md:w-1/3">
+            <div>
+                <h3 class="font-bold mb-1">Links</h3>
+                <ul class="text-gray-400 space-y-1">
+                <li><a href="#" class="hover:text-blue-500">Home</a></li>
+                <li><a href="#" class="hover:text-blue-500">Jobs</a></li>
+                <li><a href="#" class="hover:text-blue-500">Companies</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold mb-1">Resources</h3>
+                <ul class="text-gray-400 space-y-1">
+                <li><a href="#" class="hover:text-blue-500">FAQ</a></li>
+                <li><a href="#" class="hover:text-blue-500">Support</a></li>
+                </ul>
+            </div>
+            </div>  <div class="each-card w-full md:w-[calc(25%-1rem)] flex flex-col rounded-lg">
+                    
+
+            <div class="text-sm md:w-1/3">
+            <h3 class="font-bold mb-1">Contact</h3>
+            <p class="text-gray-400">Email: contact@myapp.com</p>
+            <p class="text-gray-400 mt-1">Phone: +91 12345 67890</p>
+            </div>
+            
+        </div>
+
+        <div class="text-gray-500 text-xs text-center mt-6">
+            &copy; 2025 My App. All rights reserved.
+        </div>
+        </footer>
+    </div>
+</body>
+
+</html>
